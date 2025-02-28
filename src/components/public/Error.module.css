@@ -1,0 +1,16 @@
+.error-main-container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error-child-container {
+    width: 300px;
+    height: 300px;
+    background: url(../../assets/errorImage.jpg);
+    background-size: cover;
+    background-position: center;
+}

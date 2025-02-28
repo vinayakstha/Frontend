@@ -1,0 +1,123 @@
+.footer {
+    padding: 2rem;
+    font-family: sans-serif;
+    color: white;
+    background-color: #000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Top section */
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+/* Brand/Logo */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.brandName {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Link groups container */
+.linkGroups {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .linkGroups {
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+
+/* Each group (About, Follow Us, Legal) */
+.linkGroup h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.linkGroup ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.linkGroup li {
+    margin-bottom: 0.25rem;
+}
+
+.linkGroup a {
+    color: #6b7280;
+    /* Tailwind's gray-600 for example */
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.linkGroup a:hover {
+    text-decoration: underline;
+}
+
+/* Divider line */
+.divider {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid gray;
+    /* Tailwind's gray-200 */
+}
+
+/* Bottom section */
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Social icons row */
+.socialIcons {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Icon links */
+.icon {
+    color: #6b7280;
+    /* Tailwind's gray-600 */
+    font-size: 1.25rem;
+    text-decoration: none;
+}

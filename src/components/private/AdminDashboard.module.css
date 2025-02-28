@@ -1,0 +1,148 @@
+.dashboard-container {
+    width: 100%;
+    min-height: 90vh;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 60px;
+}
+
+.heading {
+    margin-bottom: 10px;
+}
+
+.counts-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.delete-button {
+    color: red;
+    padding: 0;
+}
+
+.count-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+#post-box {
+    background-color: #3ba4ff;
+}
+
+#user-box {
+    background-color: rgb(149, 255, 149);
+}
+
+#category-box {
+    background-color: rgb(255, 172, 72);
+}
+
+.count-box h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.count-box p {
+    font-size: 2em;
+    margin: 10px 0 0;
+}
+
+.category-container {
+    margin-bottom: 20px;
+}
+
+.add-category {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.add-category input {
+    flex: 1;
+    padding: 6px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.add-category button {
+    padding: 9px 10px;
+    background-color: #120b46;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-category button:hover {
+    background-color: #2e2970;
+}
+
+.category-table,
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-table th,
+.category-table td,
+.user-table th,
+.user-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.category-table th,
+.user-table th {
+    background-color: #120b46;
+    color: white;
+    font-weight: bold;
+}
+
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    .counts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .count-box {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .category-table,
+    .user-table {
+        font-size: 0.9em;
+    }
+
+    .heading {
+        text-align: center;
+    }
+}
